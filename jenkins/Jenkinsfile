@@ -26,5 +26,10 @@ pipeline {
                 deleteDir()
             }
         }
+        stage('completed') {
+            steps {
+                echo 'job is completed, thanks for learning....'
+            }
+        }
     }
 }
