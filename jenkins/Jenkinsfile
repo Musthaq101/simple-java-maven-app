@@ -26,5 +26,13 @@ pipeline {
                 deleteDir()
             }
         }
+        stage('folder_creation') {
+            steps {
+                sh 'mkdir test_folder'
+                dir('test_folder') {
+                    sh 'pwd'
+                }
+            }
+        }
     }
 }
